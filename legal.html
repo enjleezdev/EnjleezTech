@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Information - Enjleez Tech</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .page-content {
+            padding: 60px 0;
+            background-color: #f2f2f7; /* iOS background color */
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .iphone-card {
+            max-width: 420px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .card-notch {
+            width: 150px;
+            height: 30px;
+            background-color: #000;
+            border-radius: 0 0 20px 20px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, #0066ff, #5c5ce7);
+            color: white;
+            padding: 50px 20px 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .card-header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .card-header p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .card-icon i {
+            font-size: 30px;
+            color: #0066ff;
+        }
+        
+        .card-content {
+            padding: 30px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .card-section {
+            margin-bottom: 25px;
+        }
+        
+        .card-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .card-section h2 {
+            font-size: 18px;
+            color: #1c1c1e;
+            margin: 0 0 15px;
+            font-weight: 600;
+        }
+        
+        .card-section p {
+            margin: 0 0 15px;
+            color: #3a3a3c;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        .card-section ul {
+            margin: 0 0 15px;
+            padding-left: 20px;
+            color: #3a3a3c;
+        }
+        
+        .card-section li {
+            margin-bottom: 8px;
+        }
+        
+        .card-footer {
+            padding: 20px 30px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #e5e5ea;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #0066ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: auto;
+            transition: background-color 0.2s;
+        }
+        
+        .contact-button:hover {
+            background-color: #0055d6;
+        }
+        
+        .contact-button i {
+            margin-right: 8px;
+        }
+        
+        .legal-stamp {
+            display: flex;
+            align-items: center;
+            color: #8e8e93;
+            font-size: 14px;
+        }
+        
+        .legal-stamp i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+        
+        /* Home indicator */
+        .home-indicator {
+            width: 120px;
+            height: 5px;
+            background-color: #000;
+            border-radius: 3px;
+            margin: 20px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html#services" class="en-text">Services</a><a href="index.html#services" class="ar-text" style="display:none;">خدماتنا</a></li>
+                    <li><a href="index.html#about" class="en-text">About</a><a href="index.html#about" class="ar-text" style="display:none;">من نحن</a></li>
+                    <li><a href="index.html#contact" class="en-text">Contact</a><a href="index.html#contact" class="ar-text" style="display:none;">اتصل بنا</a></li>
+                    <li><a href="index.html" class="home-btn" title="Home"><i class="fas fa-home"></i></a></li>
+                    <li><button id="language-toggle" class="lang-btn">العربية</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Legal Information Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="iphone-card">
+                <!-- Removed the card-notch div completely -->
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-scale-balanced"></i>
+                    </div>
+                    <h1>Legal Information</h1>
+                    <p>Official Legal Notice</p>
+                </div>
+                <div class="card-content">
+                    <div class="card-section">
+                        <p><strong>Enjleez Tech</strong> operates the website <strong>www.enjleez.tech</strong>. All content, services and intellectual property on this Site are owned by <strong>Enjleez Tech</strong> unless otherwise stated.</p>
+                    </div>
+                    <div class="card-section">
+                        <p>Unauthorized copying, distribution or modification of any material on this Site is strictly prohibited.</p>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="legal-stamp">
+                        <i class="fas fa-certificate"></i>
+                        <span>Official Document</span>
+                    </div>
+                    <a href="mailto:enjleez@gmail.com" class="contact-button">
+                        <i class="fas fa-envelope"></i>
+                        Contact Legal
+                    </a>
+                </div>
+                <div class="home-indicator"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-about">
+                    <h3 class="en-text">Enjleez Tech</h3>
+                    <h3 class="ar-text" style="display:none;">انجليز تك</h3>
+                    <p class="en-text">We offer comprehensive technical solutions to help you succeed in the digital world</p>
+                    <p class="ar-text" style="display:none;">نقدم حلول تقنية متكاملة لمساعدتك على النجاح في العالم الرقمي</p>
+                </div>
+                <div class="footer-links">
+                    <button onclick="window.location.href='privacy-policy.html'" class="footer-toggle">Privacy Policy</button>
+                    <button onclick="window.location.href='terms.html'" class="footer-toggle">Terms of Use</button>
+                    <button onclick="window.location.href='legal.html'" class="footer-toggle">Legal Information</button>
+                    <button class="footer-toggle" data-target="about-drawer">About Us</button>
+                    <button class="footer-toggle" data-target="contact-drawer">Contact Us</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="en-text">All rights reserved &copy; 2023 Enjleez Tech</p>
+                <p class="ar-text" style="display:none;">جميع الحقوق محفوظة &copy; 2023 انجليز تك</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
