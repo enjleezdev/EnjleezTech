@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Information - Enjleez Tech</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="whatsapp-button.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .page-content {
@@ -27,16 +28,51 @@
             position: relative;
         }
         
-        .card-notch {
-            width: 150px;
-            height: 30px;
-            background-color: #000;
-            border-radius: 0 0 20px 20px;
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 10;
+        nav .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            z-index: 2;
+        }
+
+        .nav-links ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        @media (max-width: 768px) {
+
+
+            nav .container {
+                padding: 0 15px;
+            }
+
+            .nav-links {
+                margin: 0;
+            }
+
+            .nav-links ul {
+                gap: 15px;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+            }
         }
         
         .card-header {
@@ -155,6 +191,19 @@
             font-size: 16px;
         }
         
+        .footer-bottom p {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .footer-bottom p {
+                font-size: 11px;
+            }
+        }
+        
 
     </style>
 </head>
@@ -162,13 +211,13 @@
     <!-- Top Navigation -->
     <header>
         <div class="container">
+
             <nav>
                 <ul>
                     <li><a href="index.html#services" class="en-text">Services</a><a href="index.html#services" class="ar-text">خدماتنا</a></li>
                     <li><a href="index.html#about" class="en-text">About</a><a href="index.html#about" class="ar-text">من نحن</a></li>
                     <li><a href="index.html#contact" class="en-text">Contact</a><a href="index.html#contact" class="ar-text">اتصل بنا</a></li>
-                    <li><a href="index.html" class="home-btn" title="Home"><i class="fas fa-home"></i></a></li>
-                    <li><button id="language-toggle" class="lang-btn">العربية</button></li>
+                    <li><button id="language-toggle" class="lang-btn" aria-label="Toggle language between English and Arabic">العربية</button></li>
                 </ul>
             </nav>
         </div>
@@ -202,8 +251,8 @@
                         <p class="ar-text">تخضع هذه الشروط لقوانين الولايات المتحدة الأمريكية.</p>
                     </div>
                     <div class="card-section">
-                        <p class="en-text"><strong>Enjleez Tech</strong> operates the website <strong>www.enjleez.tech</strong>. All content, services and intellectual property on this Site are owned by <strong>Enjleez Tech</strong> unless otherwise stated.</p>
-                        <p class="ar-text"><strong>انجليز تك</strong> تعمل على الموقع <strong>www.enjleez.tech</strong>. جميع المحتوى والخدمات والملكية الفكرية على هذا الموقع تخص <strong>انجليز تك</strong> ما لم يُذكر خلاف ذلك.</p>
+                        <p class="en-text"><strong><a href="index.html" style="text-decoration: none; color: inherit;">Enjleez Tech</a></strong> operates the website <strong>www.enjleez.tech</strong>. All content, services and intellectual property on this Site are owned by <strong><a href="index.html" style="text-decoration: none; color: inherit;">Enjleez Tech</a></strong> unless otherwise stated.</p>
+                        <p class="ar-text">تعمل <strong><a href="index.html" style="text-decoration: none; color: inherit;">إنجليز تكنولوجــــي</a></strong> على تشغيل موقع الويب <strong>www.enjleez.tech</strong>. جميع المحتويات والخدمات والملكية الفكرية على هذا الموقع مملوكة لـ <strong><a href="index.html" style="text-decoration: none; color: inherit;">إنجليز تكنولوجــــي</a></strong> ما لم ينص على خلاف ذلك.</p>
                     </div>
                     <div class="card-section">
                         <p class="en-text">Unauthorized copying, distribution or modification of any material on this Site is strictly prohibited.</p>
@@ -232,8 +281,8 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-about">
-                    <h3 class="en-text">Enjleez Tech</h3>
-                    <h3 class="ar-text">انجليز تك</h3>
+                    <h3 class="en-text"><a href="index.html" style="text-decoration: none; color: inherit;">Enjleez Tech</a></h3>
+                    <h3 class="ar-text"><a href="index.html" style="text-decoration: none; color: inherit;">إنجليز تكنولوجــــي</a></h3>
                     <p class="en-text">We offer comprehensive technical solutions to help you succeed in the digital world</p>
                     <p class="ar-text">نقدم حلول تقنية متكاملة لمساعدتك على النجاح في العالم الرقمي</p>
                 </div>
@@ -244,13 +293,17 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="en-text">All rights reserved &copy; 2023 Enjleez Tech</p>
-                <p class="ar-text">جميع الحقوق محفوظة &copy; 2023 انجليز تك</p>
+                <p class="en-text">All rights reserved &copy; 2023 <a href="index.html" style="text-decoration: none; color: inherit;">Enjleez Tech</a></p>
+                <p class="ar-text">جميع الحقوق محفوظة &copy; 2025 <a href="index.html" style="text-decoration: none; color: inherit;">إنجليز تكنولوجــــي</a></p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/447453394836" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
 

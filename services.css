@@ -1,0 +1,61 @@
+/* Services Section */
+.services {
+    padding: 80px 0;
+    background-color: var(--light-color);
+}
+
+.services-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Mobile layout */
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Desktop layout - 3 cards per row */
+@media (min-width: 1025px) {
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Service Cards */
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Image Cards */
+.service-card.image-card {
+    padding: 0;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.service-card.image-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+/* Specific styles for image 2 */
+.service-card.image-card img[src*="2.png"] {
+    padding: 0;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: transparent;
+}

@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Enjleez Tech</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="whatsapp-button.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         .page-content {
             padding: 60px 0;
-            background-color: #f2f2f7; /* iOS background color */
+            background-color: #f2f2f7;
             min-height: 70vh;
             display: flex;
             align-items: center;
@@ -17,7 +18,7 @@
         }
         
         .iphone-card {
-            max-width: 420px;
+            max-width: 600px;
             width: 100%;
             margin: 0 auto;
             background-color: #fff;
@@ -71,8 +72,8 @@
         
         .card-content {
             padding: 30px;
-            overflow-y: visible;
-            max-height: none;
+            height: auto;
+            overflow: visible;
         }
         
         .card-section {
@@ -119,21 +120,25 @@
             display: inline-flex;
             align-items: center;
             background-color: #0066ff;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 10px;
+            color: white !important;
+            padding: 8px 16px;
+            border-radius: 8px;
             text-decoration: none;
+            font-size: 14px;
             font-weight: 500;
-            margin-left: auto;
             transition: background-color 0.2s;
+            white-space: nowrap;
+            max-width: fit-content;
         }
         
         .contact-button:hover {
             background-color: #0055d6;
+            color: white !important;
         }
         
         .contact-button i {
             margin-right: 8px;
+            font-size: 14px;
         }
         
         .legal-stamp {
@@ -148,13 +153,17 @@
             font-size: 16px;
         }
         
-        /* Home indicator */
-        .home-indicator {
-            width: 120px;
-            height: 5px;
-            background-color: #000;
-            border-radius: 3px;
-            margin: 20px auto 0;
+        .footer-bottom p {
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .footer-bottom p {
+                font-size: 11px;
+            }
         }
     </style>
 </head>
@@ -162,13 +171,13 @@
     <!-- Top Navigation -->
     <header>
         <div class="container">
+
             <nav>
                 <ul>
                     <li><a href="index.html#services" class="en-text">Services</a><a href="index.html#services" class="ar-text">خدماتنا</a></li>
                     <li><a href="index.html#about" class="en-text">About</a><a href="index.html#about" class="ar-text">من نحن</a></li>
                     <li><a href="index.html#contact" class="en-text">Contact</a><a href="index.html#contact" class="ar-text">اتصل بنا</a></li>
-                    <li><a href="index.html" class="home-btn"><i class="fas fa-home"></i> <span class="en-text">Home</span><span class="ar-text">الرئيسية</span></a></li>
-                    <li><button id="language-toggle" class="lang-btn">العربية</button></li>
+                    <li><button id="language-toggle" class="lang-btn" aria-label="Toggle language between English and Arabic">العربية</button></li>
                 </ul>
             </nav>
         </div>
@@ -186,7 +195,7 @@
                     <h1 class="en-text">Privacy Policy</h1>
                     <h1 class="ar-text">سياسة الخصوصية</h1>
                     <p class="en-text">For Enjleez Tech Users</p>
-                    <p class="ar-text">لمستخدمي انجليز تك</p>
+                    <p class="ar-text">لمستخدمي انجليز تكنولوجي</p>
                 </div>
                 <div class="card-content">
                     <div class="card-section">
@@ -239,7 +248,7 @@
                         <h2 class="en-text">Data Sharing Practices</h2>
                         <h2 class="ar-text">ممارسات مشاركة البيانات</h2>
                         <p class="en-text">We value your privacy and will never sell your personal information. We may share data with:</p>
-                        <p class="ar-text">نحن نقدر خصوصيتك ولن نبيع معلوماتك الشخصية أبداً. قد نشارك البيانات مع:</p>
+                        <p class="ar-text">نحن في <strong>انجليز تكنولوجي</strong> نقدر خصوصيتك ونلتزم بحمايتها.</p>
                         <ul class="en-text">
                             <li>Service providers necessary for our operations (e.g., web hosting)</li>
                             <li>Legal authorities when required by law</li>
@@ -295,7 +304,7 @@
                         <span class="ar-text">اتصل بنا</span>
                     </a>
                 </div>
-                <div class="home-indicator"></div>
+
             </div>
         </div>
     </section>
@@ -305,8 +314,8 @@
         <div class="container">
             <div class="footer-top">
                 <div class="footer-about">
-                    <h3 class="en-text">Enjleez Tech</h3>
-                    <h3 class="ar-text">انجليز تك</h3>
+                    <h3 class="en-text"><a href="index.html" style="text-decoration: none; color: inherit;">Enjleez Tech</a></h3>
+                    <h3 class="ar-text"><a href="index.html" style="text-decoration: none; color: inherit;">إنجليز تكنولوجــــي</a></h3>
                     <p class="en-text">We offer comprehensive technical solutions to help you succeed in the digital world</p>
                     <p class="ar-text">نقدم حلول تقنية متكاملة لمساعدتك على النجاح في العالم الرقمي</p>
                 </div>
@@ -317,8 +326,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="en-text">All rights reserved &copy; 2025 Enjleez Tech</p>
-                <p class="ar-text">جميع الحقوق محفوظة &copy; 2025 انجليز تك</p>
+                <p class="en-text">All rights reserved &copy; 2023 <a href="index.html" style="text-decoration: none; color: inherit;">Enjleez Tech</a></p>
+                <p class="ar-text">جميع الحقوق محفوظة &copy; 2025 <a href="index.html" style="text-decoration: none; color: inherit;">إنجليز تكنولوجــــي</a></p>
             </div>
         </div>
     </footer>
@@ -341,6 +350,10 @@
             }
         });
     </script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/447453394836" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Contact us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 </body>
 </html>
 
