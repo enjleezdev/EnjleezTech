@@ -3,57 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enjleez Tech - Professional web development and technical services. Building your digital future with modern solutions.">
+    <meta name="keywords" content="web development, technical services, digital solutions, website design, Saudi Arabia">
+    <meta property="og:title" content="Enjleez Tech - Web Development & Hosting">
+    <meta property="og:description" content="Professional web development and technical services. Building your digital future with modern solutions.">
+    <meta property="og:type" content="website">
     <title>Enjleez Tech - Web Development & Hosting</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Top Navigation -->
     <header>
         <div class="container">
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="Enjleez Tech Solutions Logo" class="main-logo" loading="eager">
+            </div>
             <nav>
                 <ul>
-                    <li><a href="#services" class="en-text">Services</a><a href="#services" class="ar-text" style="display:none;">خدماتنا</a></li>
-                    <li><a href="#about" class="en-text">About</a><a href="#about" class="ar-text" style="display:none;">من نحن</a></li>
-                    <li><a href="#contact" class="en-text">Contact</a><a href="#contact" class="ar-text" style="display:none;">اتصل بنا</a></li>
-                    <li><button id="language-toggle" class="lang-btn">العربية</button></li>
+                    <li><a href="#services" class="en-text">Services</a><a href="#services" class="ar-text">خدماتنا</a></li>
+                    <li><a href="#about" class="en-text">About</a><a href="#about" class="ar-text">من نحن</a></li>
+                    <li><a href="#contact" class="en-text">Contact</a><a href="#contact" class="ar-text">اتصل بنا</a></li>
+                    <li><button id="language-toggle" class="lang-btn" aria-label="Toggle language between English and Arabic">العربية</button></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- القائمة المنبثقة -->
-    <div class="popup-menu" id="popup-menu">
-        <div class="popup-menu-content">
-            <div class="popup-menu-header">
-                <button class="close-menu" id="close-menu">&times;</button>
-            </div>
-            <div class="popup-menu-links">
-                <a href="#about" class="popup-menu-link en-text">About Us</a>
-                <a href="#about" class="popup-menu-link ar-text" style="display:none;">من نحن</a>
-                <a href="#contact" class="popup-menu-link en-text">Contact Us</a>
-                <a href="#contact" class="popup-menu-link ar-text" style="display:none;">اتصل بنا</a>
-                <a href="#services" class="popup-menu-link en-text">Our Services</a>
-                <a href="#services" class="popup-menu-link ar-text" style="display:none;">خدماتنا</a>
-                <a href="#" class="popup-menu-link en-text">Blog</a>
-                <a href="#" class="popup-menu-link ar-text" style="display:none;">المدونة</a>
-                <a href="#" class="popup-menu-link en-text">Support</a>
-                <a href="#" class="popup-menu-link ar-text" style="display:none;">الدعم الفني</a>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Digital Future Section (المحتوى المنقول) -->
     <section class="digital-future">
         <div class="container">
             <h1 class="en-text">Building Your Digital Future</h1>
-            <h1 class="ar-text" style="display:none;">نبني مستقبلك الرقمي</h1>
+            <h1 class="ar-text">نبني مستقبلك الرقمي</h1>
             
-            <p class="en-text">Enjleez Tech specializes in web development, e-commerce solutions, and comprehensive technical services</p>
-            <p class="ar-text" style="display:none;">شركة انجليز تك متخصصة في تطوير الويب وبناء المتاجر الإلكترونية وتقديم الحلول التقنية المتكاملة</p>
+            <p class="en-text">Enjleez Tech specializes in web development and comprehensive technical services</p>
+            <p class="ar-text">انجليز تك متخصصة في تطوير المواقع الإلكترونية وتقديم الخدمات التقنية المتكاملة</p>
             
             <a href="#contact" class="btn en-text">Contact Us</a>
-            <a href="#contact" class="btn ar-text" style="display:none;">تواصل معنا</a>
+            <a href="#contact" class="btn ar-text">تواصل معنا</a>
         </div>
     </section>
 
@@ -61,73 +50,111 @@
     <section id="services" class="services">
         <div class="container">
             <h2 class="en-text">Our Services</h2>
-            <h2 class="ar-text" style="display:none;">خدماتنا</h2>
+            <h2 class="ar-text">خدماتنا الرئيسية</h2>
+            
             <div class="services-grid">
+                <!-- Web Development card -->
                 <div class="service-card">
-                    <!-- حذف الإشارة إلى web-dev.jpg -->
                     <i class="fas fa-code service-icon"></i>
                     <h3 class="en-text">Web Development</h3>
-                    <h3 class="ar-text" style="display:none;">تطوير الويب</h3>
-                    <p class="en-text">We offer web development services with the latest technologies and best practices</p>
-                    <p class="ar-text" style="display:none;">نقدم خدمات تطوير مواقع الويب بأحدث التقنيات وأفضل الممارسات</p>
+                    <h3 class="ar-text">تطوير المواقع</h3>
+                    <p class="en-text">Creating modern and attractive websites that help you achieve your goals</p>
+                    <p class="ar-text">نقوم بتطوير مواقع إلكترونية عصرية وجذابة تساعدك في تحقيق أهدافك</p>
+                    
+                    <!-- English features list -->
+                    <ul class="feature-list en-text">
+                        <li><i class="fas fa-check"></i> Modern and attractive designs</li>
+                        <li><i class="fas fa-check"></i> Fast loading speed</li>
+                        <li><i class="fas fa-check"></i> Easy to update and manage</li>
+                        <li><i class="fas fa-check"></i> Full compatibility with all screen sizes</li>
+                    </ul>
+                    
+                    <!-- Arabic features list -->
+                    <ul class="feature-list ar-text">
+                        <li><i class="fas fa-check"></i> تصاميم عصرية وجذابة</li>
+                        <li><i class="fas fa-check"></i> سرعة في تحميل الصفحات</li>
+                        <li><i class="fas fa-check"></i> سهولة في التحديث والإدارة</li>
+                        <li><i class="fas fa-check"></i> متوافق تماماً مع جميع الشاشات</li>
+                    </ul>
                 </div>
+                
+                <!-- Accounting Systems card -->
                 <div class="service-card">
-                    <!-- حذف الإشارة إلى ui-design.jpg -->
-                    <i class="fas fa-paint-brush service-icon"></i>
-                    <h3 class="en-text">User Interfaces</h3>
-                    <h3 class="ar-text" style="display:none;">واجهات المستخدم</h3>
-                    <p class="en-text">Designing user-friendly and attractive interfaces to suit your needs</p>
-                    <p class="ar-text" style="display:none;">تصميم واجهات مستخدم سهلة الاستخدام وجذابة تناسب احتياجاتك</p>
+                    <i class="fas fa-calculator service-icon"></i>
+                    <h3 class="en-text">Accounting Systems</h3>
+                    <h3 class="ar-text">الأنظمة المحاسبية</h3>
+                    <p class="en-text">Comprehensive accounting solutions to manage your business efficiently</p>
+                    <p class="ar-text">أنظمة محاسبية متكاملة لإدارة أعمالك بكفاءة عالية</p>
+                    
+                    <!-- English features list -->
+                    <ul class="feature-list en-text">
+                        <li><i class="fas fa-check"></i> Invoice and expense management</li>
+                        <li><i class="fas fa-check"></i> Financial reports and analytics</li>
+                        <li><i class="fas fa-check"></i> User-friendly interface</li>
+                        <li><i class="fas fa-check"></i> Continuous technical support</li>
+                    </ul>
+                    
+                    <!-- Arabic features list -->
+                    <ul class="feature-list ar-text">
+                        <li><i class="fas fa-check"></i> إدارة الفواتير والمصروفات بسهولة</li>
+                        <li><i class="fas fa-check"></i> تقارير مالية وتحليلات متقدمة</li>
+                        <li><i class="fas fa-check"></i> واجهة سهلة وبسيطة الاستخدام</li>
+                        <li><i class="fas fa-check"></i> دعم فني مستمر على مدار الساعة</li>
+                    </ul>
                 </div>
-                <div class="service-card">
-                    <!-- حذف الإشارة إلى hosting.jpg -->
-                    <i class="fas fa-server service-icon"></i>
-                    <h3 class="en-text">Website Hosting</h3>
-                    <h3 class="ar-text" style="display:none;">استضافة المواقع</h3>
-                    <p class="en-text">Trusted and secure hosting services for websites and applications</p>
-                    <p class="ar-text" style="display:none;">خدمات استضافة موثوقة وآمنة لمواقع الويب والتطبيقات</p>
-                </div>
-                <div class="service-card">
-                    <!-- حذف الإشارة إلى ecommerce.jpg -->
-                    <i class="fas fa-shopping-cart service-icon"></i>
-                    <h3 class="en-text">E-commerce Solutions</h3>
-                    <h3 class="ar-text" style="display:none;">المتاجر الإلكترونية</h3>
-                    <p class="en-text">Building and developing comprehensive e-commerce platforms to help you grow</p>
-                    <p class="ar-text" style="display:none;">بناء وتطوير متاجر إلكترونية متكاملة تساعدك على النمو</p>
-                </div>
-                <div class="service-card">
-                    <!-- حذف الإشارة إلى consultation.jpg -->
-                    <i class="fas fa-comments service-icon"></i>
-                    <h3 class="en-text">Technical Consultation</h3>
-                    <h3 class="ar-text" style="display:none;">الاستشارات التقنية</h3>
-                    <p class="en-text">Specialized consultations in web development and technical solutions</p>
-                    <p class="ar-text" style="display:none;">استشارات متخصصة في مجال تطوير الويب والحلول التقنية</p>
-                </div>
-                <div class="service-card">
-                    <i class="fas fa-cash-register service-icon"></i>
-                    <h3 class="en-text">Point of Sale Systems</h3>
-                    <h3 class="ar-text" style="display:none;">أنظمة البيع</h3>
-                    <p class="en-text">Creating efficient and user-friendly point of sale systems for your business</p>
-                    <p class="ar-text" style="display:none;">إنشاء أنظمة بيع فعالة وسهلة الاستخدام لعملك</p>
-                </div>
+                
+                <!-- Inventory Management card -->
                 <div class="service-card">
                     <i class="fas fa-warehouse service-icon"></i>
                     <h3 class="en-text">Inventory Management Systems</h3>
-                    <h3 class="ar-text" style="display:none;">أنظمة إدارة المستودعات والمخازن</h3>
-                    <p class="en-text">Comprehensive solutions for warehouse and inventory management</p>
-                    <p class="ar-text" style="display:none;">حلول متكاملة لإدارة المستودعات والمخازن</p>
+                    <h3 class="ar-text">إدارة المخزون</h3>
+                    <p class="en-text">Complete solutions for managing your inventory and stock efficiently</p>
+                    <p class="ar-text">نظام متكامل لإدارة المخزون والمستودعات بكفاءة عالية</p>
+                    
+                    <!-- English features list -->
+                    <ul class="feature-list en-text">
+                        <li><i class="fas fa-check"></i> Real-time inventory tracking</li>
+                        <li><i class="fas fa-check"></i> Automatic stock alerts</li>
+                        <li><i class="fas fa-check"></i> Detailed reports and analytics</li>
+                        <li><i class="fas fa-check"></i> Integration with accounting systems</li>
+                    </ul>
+                    
+                    <!-- Arabic features list -->
+                    <ul class="feature-list ar-text">
+                        <li><i class="fas fa-check"></i> متابعة المخزون لحظياً</li>
+                        <li><i class="fas fa-check"></i> تنبيهات آلية لحالة المخزون</li>
+                        <li><i class="fas fa-check"></i> تقارير تفصيلية وتحليلات دقيقة</li>
+                        <li><i class="fas fa-check"></i> ربط مباشر مع النظام المحاسبي</li>
+                    </ul>
+                </div>
+                
+                <!-- UI Design card -->
+                <div class="service-card">
+                    <i class="fas fa-paint-brush service-icon"></i>
+                    <h3 class="en-text">User Interfaces</h3>
+                    <h3 class="ar-text">واجهات المستخدم</h3>
+                    <p class="en-text">Designing user-friendly and attractive interfaces to suit your needs</p>
+                    <p class="ar-text">تصميم واجهات مستخدم سهلة الاستخدام وجذابة تناسب احتياجاتك</p>
+                </div>
+                
+                <!-- Hosting card -->
+                <div class="service-card">
+                    <i class="fas fa-server service-icon"></i>
+                    <h3 class="en-text">Website Hosting</h3>
+                    <h3 class="ar-text">استضافة المواقع</h3>
+                    <p class="en-text">Trusted and secure hosting services for websites and applications</p>
+                    <p class="ar-text">خدمات استضافة موثوقة وآمنة لمواقع الويب والتطبيقات</p>
+                </div>
+                
+                <!-- Technical Consultation card -->
+                <div class="service-card">
+                    <i class="fas fa-comments service-icon"></i>
+                    <h3 class="en-text">Technical Consultation</h3>
+                    <h3 class="ar-text">الاستشارات التقنية</h3>
+                    <p class="en-text">Specialized consultations in web development and technical solutions</p>
+                    <p class="ar-text">استشارات متخصصة في مجال تطوير الويب والحلول التقنية</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- قسم الصور المتتالية -->
-    <section id="showcase" class="showcase">
-        <div class="showcase-item image-4">
-            <img src="images/4.png" alt="Showcase Image 3" class="showcase-img">
-        </div>
-        <div class="showcase-item">
-            <img src="images/3.png" alt="Showcase Image 2" class="showcase-img">
         </div>
     </section>
 
@@ -135,11 +162,11 @@
     <section id="about" class="about">
         <div class="container">
             <h2 class="en-text">About Us</h2>
-            <h2 class="ar-text" style="display:none;">من نحن</h2>
+            <h2 class="ar-text">من نحن</h2>
             <p class="en-text">Enjleez Tech is a specialized company in web development and comprehensive technical solutions. We strive to always provide the best services to our clients and help them achieve their digital goals.</p>
-            <p class="ar-text" style="display:none;">شركة انجليز تك هي شركة متخصصة في مجال تطوير الويب وتقديم الحلول التقنية المتكاملة. نسعى دائماً لتقديم أفضل الخدمات لعملائنا ومساعدتهم على تحقيق أهدافهم الرقمية.</p>
+            <p class="ar-text">شركة انجليز تك هي شركة متخصصة في مجال تطوير الويب وتقديم الحلول التقنية المتكاملة. نسعى دائماً لتقديم أفضل الخدمات لعملائنا ومساعدتهم على تحقيق أهدافهم الرقمية.</p>
             <p class="en-text">Our team of experienced developers and designers work with passion to transform your ideas into a remarkable digital reality.</p>
-            <p class="ar-text" style="display:none;">فريقنا من المطورين والمصممين ذوي الخبرة يعمل بشغف لتحويل أفكارك إلى واقع رقمي متميز.</p>
+            <p class="ar-text">فريقنا من المطورين والمصممين ذوي الخبرة يعمل بشغف لتحويل أفكارك إلى واقع رقمي متميز.</p>
         </div>
     </section>
 
@@ -147,30 +174,53 @@
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="en-text">Contact Us</h2>
-            <h2 class="ar-text" style="display:none;">اتصل بنا</h2>
+            <h2 class="ar-text">اتصل بنا</h2>
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <p class="en-text">enjleez.develabs@gmail.com</p>
-                        <p class="ar-text" style="display:none;">enjleez.develabs@gmail.com</p>
+                        <p class="ar-text">enjleez.develabs@gmail.com</p>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone"></i>
                         <p class="en-text">+966566922368</p>
-                        <p class="ar-text" style="display:none;">+966566922368</p>
+                        <p class="ar-text">+966566922368</p>
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form>
-                        <input type="text" placeholder="الاسم" required>
-                        <input type="email" placeholder="البريد الإلكتروني" required>
-                        <input type="text" placeholder="الموضوع">
-                        <textarea placeholder="رسالتك" required></textarea>
-                        <button type="submit" class="btn">إرسال</button>
-                    </form>
+                    <div class="contact-card">
+                        <form id="contact-form" aria-label="Contact form">
+                            <div class="form-group">
+                                <label for="name" class="ar-text">الاسم الكامل</label>
+                                <label for="name" class="en-text">Full Name</label>
+                                <input type="text" id="name" name="name" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="ar-text">البريد الإلكتروني</label>
+                                <label for="email" class="en-text">Email Address</label>
+                                <input type="email" id="email" name="email" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="ar-text">كيف يمكننا مساعدتك؟</label>
+                                <label for="message" class="en-text">How can we help you?</label>
+                                <textarea id="message" name="message" required aria-required="true"></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button type="submit" class="submit-btn ar-text">إرسال الرسالة</button>
+                                <button type="submit" class="submit-btn en-text">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- شعار قبل الفوتر -->
+    <section class="pre-footer-logo">
+        <div class="container">
+            <img src="images/logo.png" alt="Enjleez Tech Solutions Logo" class="footer-logo">
         </div>
     </section>
 
@@ -180,28 +230,51 @@
             <div class="footer-top">
                 <div class="footer-about">
                     <h3 class="en-text">Enjleez Tech</h3>
-                    <h3 class="ar-text" style="display:none;">انجليز تك</h3>
+                    <h3 class="ar-text">انجليز تك</h3>
                     <p class="en-text">We offer comprehensive technical solutions to help you succeed in the digital world</p>
-                    <p class="ar-text" style="display:none;">نقدم حلول تقنية متكاملة لمساعدتك على النجاح في العالم الرقمي</p>
+                    <p class="ar-text">نقدم حلولاً تقنية متكاملة لضمان نجاحك في العالم الرقمي</p>
                 </div>
                 <div class="footer-links">
                     <button onclick="window.location.href='privacy-policy.html'" class="footer-toggle">Privacy Policy</button>
                     <button onclick="window.location.href='terms.html'" class="footer-toggle">Terms of Use</button>
                     <button onclick="window.location.href='legal.html'" class="footer-toggle">Legal Information</button>
-                    <button class="footer-toggle" data-target="about-drawer">About Us</button>
-                    <button class="footer-toggle" data-target="contact-drawer">Contact Us</button>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="en-text">All rights reserved &copy; 2023 Enjleez Tech</p>
-                <p class="ar-text" style="display:none;">جميع الحقوق محفوظة &copy; 2023 انجليز تك</p>
+                <p class="en-text">All rights reserved &copy; 2025 Enjleez Tech</p>
+                <p class="ar-text">جميع الحقوق محفوظة &copy; 2025 انجليز تك</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all links with hash
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
+
+
 
 
 

@@ -89,9 +89,146 @@
         }
         
         .page-content {
-            padding: 80px 0;
-            background-color: #f9f9f9;
+            padding: 60px 0;
+            background-color: #f2f2f7;
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
+        
+        .iphone-card {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            overflow: visible;
+            position: relative;
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, #0066ff, #5c5ce7);
+            color: white;
+            padding: 50px 20px 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .card-header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        .card-header p {
+            margin: 10px 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .card-icon {
+            width: 60px;
+            height: 60px;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .card-icon i {
+            font-size: 30px;
+            color: #0066ff;
+        }
+        
+        .card-content {
+            padding: 30px;
+            height: auto;
+            overflow: visible;
+        }
+        
+        .card-section {
+            margin-bottom: 25px;
+        }
+        
+        .card-section:last-child {
+            margin-bottom: 0;
+        }
+        
+        .card-section h2 {
+            font-size: 18px;
+            color: #1c1c1e;
+            margin: 0 0 15px;
+            font-weight: 600;
+        }
+        
+        .card-section p {
+            margin: 0 0 15px;
+            color: #3a3a3c;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+        
+        .card-section ul {
+            margin: 0 0 15px;
+            padding-left: 20px;
+            color: #3a3a3c;
+        }
+        
+        .card-section li {
+            margin-bottom: 8px;
+        }
+        
+        .card-footer {
+            padding: 20px 30px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #e5e5ea;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            background-color: #0066ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+        
+        .contact-button:hover {
+            background-color: #0055d6;
+        }
+        
+        .contact-button i {
+            margin-right: 8px;
+        }
+        
+        .legal-stamp {
+            display: flex;
+            align-items: center;
+            color: #8e8e93;
+            font-size: 14px;
+        }
+        
+        .legal-stamp i {
+            margin-right: 8px;
+            font-size: 16px;
+        }
+        
+        .legal-seal p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
         .home-indicator {
             width: 120px;
             height: 5px;
@@ -107,9 +244,9 @@
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="index.html#services" class="en-text">Services</a><a href="index.html#services" class="ar-text" style="display:none;">خدماتنا</a></li>
-                    <li><a href="index.html#about" class="en-text">About</a><a href="index.html#about" class="ar-text" style="display:none;">من نحن</a></li>
-                    <li><a href="index.html#contact" class="en-text">Contact</a><a href="index.html#contact" class="ar-text" style="display:none;">اتصل بنا</a></li>
+                    <li><a href="index.html#services" class="en-text">Services</a><a href="index.html#services" class="ar-text">خدماتنا</a></li>
+                    <li><a href="index.html#about" class="en-text">About</a><a href="index.html#about" class="ar-text">من نحن</a></li>
+                    <li><a href="index.html#contact" class="en-text">Contact</a><a href="index.html#contact" class="ar-text">اتصل بنا</a></li>
                     <li><a href="index.html" class="home-btn" title="Home"><i class="fas fa-home"></i></a></li>
                     <li><button id="language-toggle" class="lang-btn">العربية</button></li>
                 </ul>
@@ -120,55 +257,162 @@
     <!-- Terms of Use Content -->
     <section class="page-content">
         <div class="container">
-            <div class="terms-container">
-                <div class="terms-header">
-                    <h1>Terms of Use</h1>
-                    <p>Last updated: July 2023</p>
+            <div class="iphone-card">
+                <div class="card-header">
+                    <div class="card-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h1 class="en-text">Terms of Use</h1>
+                    <h1 class="ar-text">شروط الاستخدام</h1>
+                    <p class="en-text">For Enjleez Tech Users</p>
+                    <p class="ar-text">لمستخدمي انجليز تك</p>
                 </div>
-                
-                <div class="legal-seal">
-                    <i class="fas fa-gavel"></i>
-                    <p>OFFICIAL LEGAL DOCUMENT</p>
+                <div class="card-content">
+                    <div class="card-section">
+                        <h2 class="en-text">Governing Law</h2>
+                        <h2 class="ar-text">القانون الحاكم</h2>
+                        <p class="en-text">These terms are governed by the laws of the United States of America.</p>
+                        <p class="ar-text">تخضع هذه الشروط لقوانين الولايات المتحدة الأمريكية.</p>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h2 class="en-text">Acceptance of Terms</h2>
+                        <h2 class="ar-text">قبول الشروط</h2>
+                        <p class="en-text">By accessing and using our website, you agree to be bound by these terms and conditions.</p>
+                        <p class="ar-text">بالوصول إلى موقعنا واستخدامه، فإنك توافق على الالتزام بهذه الشروط والأحكام.</p>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h2 class="en-text">Eligibility</h2>
+                        <h2 class="ar-text">الاهلية</h2>
+                        <p class="en-text">You must be at least 13 years old (or the legal age in your jurisdiction) to use this Site.</p>
+                        <p class="ar-text">يجب أن تكون على الأقل 13 سنة (أو السن القانوني في بلدك) لاستخدام هذا الموقع.</p>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h2 class="en-text">User Responsibilities</h2>
+                        <h2 class="ar-text">مسؤوليات المستخدم</h2>
+                        <ul>
+                            <li class="en-text">Do not engage in illegal, abusive, or fraudulent activities.</li>
+                            <li class="ar-text">لا تشارك في أنشطة غير قانونية أو إساءة استخدام أو احتيالية.</li>
+                            <li class="en-text">Do not upload malicious software or spam content.</li>
+                            <li class="ar-text">لا تقم بتحميل برامج ضارة أو محتوى إعلاني.</li>
+                            <li class="en-text">Protect your account credentials (if applicable).</li>
+                            <li class="ar-text">حمى بيانات اعتماد حسابك (إن كان ذلك ممكنًا).</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h2 class="en-text">Content Ownership</h2>
+                        <h2 class="ar-text">ملكية المحتوى</h2>
+                        <p class="en-text">All content (text, graphics, code) belongs to <strong>Enjleez Tech</strong> or its licensors. Unauthorized use is prohibited.</p>
+                        <p class="ar-text">ينتمي جميع المحتويات (النصوص والرسومات والرموز) إلى <strong>Enjleez Tech</strong> أو منحها ترخيصًا. الاستخدام غير المصرح به محظور.</p>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h2 class="en-text">Use License</h2>
+                        <h2 class="ar-text">ترخيص الاستخدام</h2>
+                        <p class="en-text">Permission is granted to temporarily access our services for personal, non-commercial use. This license shall automatically terminate if you violate any of these restrictions.</p>
+                        <p class="ar-text">يُمنح الإذن للوصول المؤقت إلى خدماتنا للاستخدام الشخصي غير التجاري. ينتهي هذا الترخيص تلقائيًا إذا انتهكت أيًا من هذه القيود.</p>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h2 class="en-text">Disclaimer</h2>
+                        <h2 class="ar-text">إخلاء المسؤولية</h2>
+                        <p class="en-text">Our services are provided "as is" without any warranties, expressed or implied. We do not guarantee continuous, uninterrupted access to our website.</p>
+                        <p class="ar-text">يتم تقديم خدماتنا "كما هي" دون أي ضمانات، صريحة أو ضمنية. لا نضمن الوصول المستمر وغير المنقطع إلى موقعنا.</p>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h2 class="en-text">Termination</h2>
+                        <h2 class="ar-text">الإنهاء</h2>
+                        <p class="en-text">We reserve the right to suspend or terminate access for violations of these terms.</p>
+                        <p class="ar-text">نحتفظ بالحق في تعليق أو إنهاء الوصول لانتهاكات هذه الشروط.</p>
+                    </div>
+                    
+                    <div class="card-section">
+                        <h2 class="en-text">Changes to Terms</h2>
+                        <h2 class="ar-text">التغييرات على الشروط</h2>
+                        <p class="en-text">We may update these terms without prior notice. Continued use constitutes acceptance.</p>
+                        <p class="ar-text">نحن قد نحدث هذه الشروط دون إشعار مسبق. الاستمرار في استخدام الموقع يشكل موافقة.</p>
+                    </div>
                 </div>
                 
                 <div class="terms-section">
-                    <p>By accessing and using <strong>Enjleez Tech</strong>, you agree to comply with the following terms:</p>
+                    <h2 class="en-text">Acceptance of Terms</h2>
+                    <h2 class="ar-text">قبول الشروط</h2>
+                    <p class="en-text">By accessing and using our website, you agree to be bound by these terms and conditions.</p>
+                    <p class="ar-text">بالوصول إلى موقعنا واستخدامه، فإنك توافق على الالتزام بهذه الشروط والأحكام.</p>
                 </div>
                 
                 <div class="terms-section">
-                    <h2>Eligibility</h2>
-                    <p>You must be at least 13 years old (or the legal age in your jurisdiction) to use this Site.</p>
+                    <h2 class="en-text">Eligibility</h2>
+                    <h2 class="ar-text">الاهلية</h2>
+                    <p class="en-text">You must be at least 13 years old (or the legal age in your jurisdiction) to use this Site.</p>
+                    <p class="ar-text">يجب أن تكون على الأقل 13 سنة (أو السن القانوني في بلدك) لاستخدام هذا الموقع.</p>
                 </div>
                 
                 <div class="terms-section">
-                    <h2>User Responsibilities</h2>
+                    <h2 class="en-text">User Responsibilities</h2>
+                    <h2 class="ar-text">مسؤوليات المستخدم</h2>
                     <ul class="terms-list">
-                        <li>Do not engage in illegal, abusive, or fraudulent activities.</li>
-                        <li>Do not upload malicious software or spam content.</li>
-                        <li>Protect your account credentials (if applicable).</li>
+                        <li class="en-text">Do not engage in illegal, abusive, or fraudulent activities.</li>
+                        <li class="ar-text">لا تشارك في أنشطة غير قانونية أو إساءة استخدام أو احتيالية.</li>
+                        <li class="en-text">Do not upload malicious software or spam content.</li>
+                        <li class="ar-text">لا تقم بتحميل برامج ضارة أو محتوى إعلاني.</li>
+                        <li class="en-text">Protect your account credentials (if applicable).</li>
+                        <li class="ar-text">حمى بيانات اعتماد حسابك (إن كان ذلك ممكنًا).</li>
                     </ul>
                 </div>
                 
                 <div class="terms-section">
-                    <h2>Content Ownership</h2>
-                    <p>All content (text, graphics, code) belongs to <strong>Enjleez Tech</strong> or its licensors. Unauthorized use is prohibited.</p>
+                    <h2 class="en-text">Content Ownership</h2>
+                    <h2 class="ar-text">ملكية المحتوى</h2>
+                    <p class="en-text">All content (text, graphics, code) belongs to <strong>Enjleez Tech</strong> or its licensors. Unauthorized use is prohibited.</p>
+                    <p class="ar-text">ينتمي جميع المحتويات (النصوص والرسومات والرموز) إلى <strong>Enjleez Tech</strong> أو منحها ترخيصًا. الاستخدام غير المصرح به محظور.</p>
                 </div>
                 
                 <div class="terms-section">
-                    <h2>Termination</h2>
-                    <p>We reserve the right to suspend or terminate access for violations of these terms.</p>
+                    <h2 class="en-text">Use License</h2>
+                    <h2 class="ar-text">ترخيص الاستخدام</h2>
+                    <p class="en-text">Permission is granted to temporarily access our services for personal, non-commercial use. This license shall automatically terminate if you violate any of these restrictions.</p>
+                    <p class="ar-text">يُمنح الإذن للوصول المؤقت إلى خدماتنا للاستخدام الشخصي غير التجاري. ينتهي هذا الترخيص تلقائيًا إذا انتهكت أيًا من هذه القيود.</p>
                 </div>
                 
                 <div class="terms-section">
-                    <h2>Changes to Terms</h2>
-                    <p>We may update these terms without prior notice. Continued use constitutes acceptance.</p>
+                    <h2 class="en-text">Disclaimer</h2>
+                    <h2 class="ar-text">إخلاء المسؤولية</h2>
+                    <p class="en-text">Our services are provided "as is" without any warranties, expressed or implied. We do not guarantee continuous, uninterrupted access to our website.</p>
+                    <p class="ar-text">يتم تقديم خدماتنا "كما هي" دون أي ضمانات، صريحة أو ضمنية. لا نضمن الوصول المستمر وغير المنقطع إلى موقعنا.</p>
                 </div>
                 
-                <div class="terms-footer">
-                    <p>For violations reporting, email: <strong>enjleez@gmail.com</strong>.</p>
+                <div class="terms-section">
+                    <h2 class="en-text">Termination</h2>
+                    <h2 class="ar-text">الإنهاء</h2>
+                    <p class="en-text">We reserve the right to suspend or terminate access for violations of these terms.</p>
+                    <p class="ar-text">نحتفظ بالحق في تعليق أو إنهاء الوصول لانتهاكات هذه الشروط.</p>
                 </div>
                 
-                <div class="home-indicator"></div>
+                <div class="terms-section">
+                    <h2 class="en-text">Changes to Terms</h2>
+                    <h2 class="ar-text">التغييرات على الشروط</h2>
+                    <p class="en-text">We may update these terms without prior notice. Continued use constitutes acceptance.</p>
+                    <p class="ar-text">نحن قد نحدث هذه الشروط دون إشعار مسبق. الاستمرار في استخدام الموقع يشكل موافقة.</p>
+                </div>
+                
+                </div>
+                <div class="card-footer">
+                    <div class="legal-stamp">
+                        <i class="fas fa-certificate"></i>
+                        <span class="en-text">Official Document</span>
+                        <span class="ar-text">وثيقة رسمية</span>
+                    </div>
+                    <a href="mailto:enjleez@gmail.com" class="contact-button">
+                        <i class="fas fa-envelope"></i>
+                        <span class="en-text">Contact Us</span>
+                        <span class="ar-text">اتصل بنا</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -179,21 +423,19 @@
             <div class="footer-top">
                 <div class="footer-about">
                     <h3 class="en-text">Enjleez Tech</h3>
-                    <h3 class="ar-text" style="display:none;">انجليز تك</h3>
+                    <h3 class="ar-text">انجليز تك</h3>
                     <p class="en-text">We offer comprehensive technical solutions to help you succeed in the digital world</p>
-                    <p class="ar-text" style="display:none;">نقدم حلول تقنية متكاملة لمساعدتك على النجاح في العالم الرقمي</p>
+                    <p class="ar-text">نقدم حلول تقنية متكاملة لمساعدتك على النجاح في العالم الرقمي</p>
                 </div>
                 <div class="footer-links">
                     <button onclick="window.location.href='privacy-policy.html'" class="footer-toggle">Privacy Policy</button>
                     <button onclick="window.location.href='terms.html'" class="footer-toggle">Terms of Use</button>
-                    <button class="footer-toggle" data-target="legal">Legal Information</button>
-                    <button class="footer-toggle" data-target="about-drawer">About Us</button>
-                    <button class="footer-toggle" data-target="contact-drawer">Contact Us</button>
+                    <button onclick="window.location.href='legal.html'" class="footer-toggle">Legal Information</button>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p class="en-text">All rights reserved &copy; 2023 Enjleez Tech</p>
-                <p class="ar-text" style="display:none;">جميع الحقوق محفوظة &copy; 2023 انجليز تك</p>
+                <p class="ar-text">جميع الحقوق محفوظة &copy; 2023 انجليز تك</p>
             </div>
         </div>
     </footer>
