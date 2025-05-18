@@ -1,0 +1,106 @@
+/* Common styles for all pages */
+.page-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
+}
+
+.scroll-indicator i {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+/* Legal pages specific styles */
+.legal-container, .terms-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.legal-container h1, .terms-container h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.legal-container h2, .terms-container h2 {
+    color: #444;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.legal-container p, .terms-container p {
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.legal-container ul, .terms-container ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.legal-container li, .terms-container li {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* RTL Support */
+html[dir="rtl"] .legal-container ul,
+html[dir="rtl"] .terms-container ul {
+    padding-right: 20px;
+    padding-left: 0;
+}
